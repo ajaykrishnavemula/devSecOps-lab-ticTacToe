@@ -83,9 +83,7 @@ kubernetes/
 └── service.yaml
 .github/
 └── workflows/
-    └── deployment.yaml
-    └── ingress.yml
-    └── service.yml
+    └── ci-cd.yml
 ```
 
 ## ⚖️ Game Logic Summary
