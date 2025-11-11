@@ -1,6 +1,7 @@
 # ⚙️ End-to-End DevSecOps Implementation — Tic Tac Toe Game🎮
 
 > A complete **DevSecOps pipeline** integrating **GitHub Actions, Trivy, Docker, Kubernetes, and Argo CD** — built around a simple React Tic Tac Toe app to demonstrate *secure CI/CD automation from code to deployment*.  
+The core idea: **every commit → test → analyze → build → secure → deploy automatically!**
 
 ![Screenshot 2025-03-04 at 7 16 48 PM](https://github.com/user-attachments/assets/7ed79f9c-9144-4870-accd-500085a15592)
 
@@ -19,24 +20,14 @@
    - Push to **GitHub Container Registry (GHCR)**  
 5. 🧾 **Update Kubernetes Manifests** –  
    - Update image tag in `/kubernetes` manifests  
-   - Commit back to the repo to trigger CD  
 
----
+
 
 ### ☸️ Continuous Delivery (Argo CD)
 - **Argo CD monitors** the `/kubernetes` folder  
 - On manifest updates → syncs desired state → **deploys automatically** to Kubernetes cluster  
 - Ensures **GitOps-based delivery** 🔄  
 
-
----
-
-## 🚀 Project Overview
-
-This project showcases an **end-to-end DevSecOps pipeline** implementing security, automation, and continuous delivery principles using a real-world workflow.  
-The core idea: **every commit → test → analyze → build → secure → deploy automatically!**
-
-![image](https://github.com/user-attachments/assets/5b2813a5-f493-4665-8964-77359b5be93a)
 
 ---
 
@@ -55,6 +46,13 @@ The core idea: **every commit → test → analyze → build → secure → depl
 | 🚢 **Continuous Delivery**     | Argo CD                              |
 | 🧠 **Language & UI**           | React 18 + TypeScript + TailwindCSS  |
 
+---
+
+## 🚀 Project Overview
+
+This project showcases an **end-to-end DevSecOps pipeline** implementing security, automation, and continuous delivery principles using a real-world workflow.  
+
+![image](https://github.com/user-attachments/assets/5b2813a5-f493-4665-8964-77359b5be93a)
 
 
 ## 🌈 Application Features
@@ -66,7 +64,6 @@ The core idea: **every commit → test → analyze → build → secure → depl
 - 🔁 Reset and replay options  
 - 📱 Fully responsive design  
 
----
 
 ## 🧱 Project Structure
 
@@ -144,6 +141,7 @@ yarn build
 
 The build artifacts will be stored in the `dist/` directory.
 
+---
 
 ## 🔑 Skills Demonstrated
 
@@ -154,7 +152,6 @@ The build artifacts will be stored in the `dist/` directory.
 - 📜 Infrastructure as Code (Kubernetes YAML manifests)  
 - 💡 Automated deployment with continuous feedback loop  
 
----
 
 Thank you for exploring this project! Feel free to reach out or contribute. 🌟
 
